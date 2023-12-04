@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4toA_ExamenUnid2.MainPage">
+
+
+    <StackLayout>
+
+
+        <Frame BackgroundColor="Chocolate">
+
+            <Label Text="CalculadoraCalorias"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="White"/>
+
+        </Frame>
+        
+
+        <Label x:Name="DuracionT" Text="Tiempo De actividad" Padding="10" TextColor="Blue"></Label>
+        <Entry  x:Name="TotalTiempo" Grid.Row="1" Grid.Column="2"/>
+         <Label x:Name="PesoT" Text="Ingresa el Tu Peso" Padding="10" TextColor="Blue " Grid.Row="1" Grid.Column="4"/>
+        <Entry x:Name="TotalPeso"/>
+         <Button Text="Calcular Calorias" x:Name="Calcular_Clicked"
+                 Grid.Row="1"
+                HeightRequest="50"
+                WidthRequest="50"
+                TextColor="White"              
+                CornerRadius="20"          
+                Margin="10"
+                FontSize="25"
+                FontAttributes="Bold"
+                BackgroundColor="Chocolate"
+                 />
+          
+
+    </StackLayout>
+</ContentPage>
